@@ -1,0 +1,281 @@
+{
+	"info": {
+		"_postman_id": "d98ddd79-b1de-4615-8146-95c85185aff7",
+		"name": "test",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "register",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "name",
+							"value": "amir",
+							"type": "text"
+						},
+						{
+							"key": "email",
+							"value": "amir.shahamiri19@gmail.com",
+							"type": "text"
+						},
+						{
+							"key": "password",
+							"value": "12345678",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "171.22.25.117/api/register",
+					"host": [
+						"171",
+						"22",
+						"25",
+						"117"
+					],
+					"path": [
+						"api",
+						"register"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "login",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "email",
+							"value": "amir.shahamiri19@gmail.com",
+							"type": "text"
+						},
+						{
+							"key": "password",
+							"value": "12345678",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://171.22.25.117/api/login",
+					"protocol": "http",
+					"host": [
+						"171",
+						"22",
+						"25",
+						"117"
+					],
+					"path": [
+						"api",
+						"login"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get-list-of-files",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "12|5GyBrNWVxSbOaLTzX4rB9G4ZyEVG1ohOCoDMvuRM",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://171.22.25.117/api/get-list-of-files",
+					"protocol": "http",
+					"host": [
+						"171",
+						"22",
+						"25",
+						"117"
+					],
+					"path": [
+						"api",
+						"get-list-of-files"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get-running-process",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "12|5GyBrNWVxSbOaLTzX4rB9G4ZyEVG1ohOCoDMvuRM",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://171.22.25.117/api/get-running-process",
+					"protocol": "http",
+					"host": [
+						"171",
+						"22",
+						"25",
+						"117"
+					],
+					"path": [
+						"api",
+						"get-running-process"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get-list-of-directories",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "12|5GyBrNWVxSbOaLTzX4rB9G4ZyEVG1ohOCoDMvuRM",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://171.22.25.117/api/get-list-of-directories",
+					"protocol": "http",
+					"host": [
+						"171",
+						"22",
+						"25",
+						"117"
+					],
+					"path": [
+						"api",
+						"get-list-of-directories"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "create-new-directory",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "12|5GyBrNWVxSbOaLTzX4rB9G4ZyEVG1ohOCoDMvuRM",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "name",
+							"value": "test",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://171.22.25.117/api/create-new-directory",
+					"protocol": "http",
+					"host": [
+						"171",
+						"22",
+						"25",
+						"117"
+					],
+					"path": [
+						"api",
+						"create-new-directory"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	]
+}
